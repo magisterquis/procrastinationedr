@@ -1,0 +1,4 @@
+10 ^rm -[rf]{2,}
+10 /etc/shadow
+5  ^sudo
+5  emacs

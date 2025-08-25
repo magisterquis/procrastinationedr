@@ -1,0 +1,11 @@
+type=PATH msg=audit(1756018533.442:1388): item=0 name="/usr/bin/systemctl" inode=515 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756018533.442:1388): item=1 name="/usr/bin/systemctl" inode=515 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756018533.442:1388): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756018533.442:1388): proctitle=73797374656D63746C007472792D726573746172740073797374656D642D6A6F75726E616C642E73657276696365
+type=SYSCALL msg=audit(1756018533.446:1389): arch=c000003e syscall=59 success=yes exit=0 a0=55d760e70790 a1=55d760ed88b0 a2=55d760f9d2b0 a3=0 items=3 ppid=1 pid=3486 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-network" exe="/usr/lib/systemd/systemd-networkd-wait-online" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1756018533.446:1389): argc=1 a0="/lib/systemd/systemd-networkd-wait-online"
+type=CWD msg=audit(1756018533.446:1389): cwd="/"
+type=PATH msg=audit(1756018533.446:1389): item=0 name="/lib/systemd/systemd-networkd-wait-online" inode=30391 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756018533.446:1389): item=1 name="/lib/systemd/systemd-networkd-wait-online" inode=30391 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756018533.446:1389): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756018533.446:1389): proctitle="/lib/systemd/systemd-networkd-wait-online"

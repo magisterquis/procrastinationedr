@@ -1,0 +1,49 @@
+type=SYSCALL msg=audit(1756001520.327:607): arch=c000003e syscall=59 success=yes exit=0 a0=562fc7db57f0 a1=562fc7e33700 a2=562fc7db5c20 a3=c277df37928ad426 items=3 ppid=1864 pid=1885 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="ps" exe="/usr/bin/ps" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="wurzel" UID="wurzel" GID="wurzel" EUID="wurzel" SUID="wurzel" FSUID="wurzel" EGID="wurzel" SGID="wurzel" FSGID="wurzel"
+type=EXECVE msg=audit(1756001520.327:607): argc=2 a0="ps" a1="awwwfux"
+type=CWD msg=audit(1756001520.327:607): cwd="/home/wurzel"
+type=PATH msg=audit(1756001520.327:607): item=0 name="/usr/bin/ps" inode=9164 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001520.327:607): item=1 name="/usr/bin/ps" inode=9164 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001520.327:607): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756001520.327:607): proctitle=70730061777777667578
+type=SYSCALL msg=audit(1756001521.379:608): arch=c000003e syscall=59 success=yes exit=0 a0=562fc7dc0270 a1=562fc7e336e0 a2=562fc7db5c20 a3=c277df37928ad426 items=3 ppid=1864 pid=1886 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="uname" exe="/usr/bin/uname" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="wurzel" UID="wurzel" GID="wurzel" EUID="wurzel" SUID="wurzel" FSUID="wurzel" EGID="wurzel" SGID="wurzel" FSGID="wurzel"
+type=EXECVE msg=audit(1756001521.379:608): argc=2 a0="uname" a1="-a"
+type=CWD msg=audit(1756001521.379:608): cwd="/home/wurzel"
+type=PATH msg=audit(1756001521.379:608): item=0 name="/usr/bin/uname" inode=677 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001521.379:608): item=1 name="/usr/bin/uname" inode=677 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001521.379:608): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756001521.379:608): proctitle=756E616D65002D61
+type=SYSCALL msg=audit(1756001522.131:609): arch=c000003e syscall=59 success=yes exit=0 a0=562fc7dbf110 a1=562fc7dc2380 a2=562fc7db5c20 a3=c277df37928ad426 items=3 ppid=1864 pid=1887 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="id" exe="/usr/bin/id" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="wurzel" UID="wurzel" GID="wurzel" EUID="wurzel" SUID="wurzel" FSUID="wurzel" EGID="wurzel" SGID="wurzel" FSGID="wurzel"
+type=EXECVE msg=audit(1756001522.131:609): argc=1 a0="id"
+type=CWD msg=audit(1756001522.131:609): cwd="/home/wurzel"
+type=PATH msg=audit(1756001522.131:609): item=0 name="/usr/bin/id" inode=719 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001522.131:609): item=1 name="/usr/bin/id" inode=719 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001522.131:609): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756001522.131:609): proctitle="id"
+type=SYSCALL msg=audit(1756001579.655:610): arch=c000003e syscall=59 success=yes exit=0 a0=562fc7e39340 a1=562fc7db7f40 a2=562fc7db5c20 a3=c277df37928ad426 items=3 ppid=1864 pid=1888 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="touch" exe="/usr/bin/touch" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="wurzel" UID="wurzel" GID="wurzel" EUID="wurzel" SUID="wurzel" FSUID="wurzel" EGID="wurzel" SGID="wurzel" FSGID="wurzel"
+type=EXECVE msg=audit(1756001579.655:610): argc=2 a0="touch" a1=666F6F22626172
+type=CWD msg=audit(1756001579.655:610): cwd="/home/wurzel"
+type=PATH msg=audit(1756001579.655:610): item=0 name="/usr/bin/touch" inode=675 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001579.655:610): item=1 name="/usr/bin/touch" inode=675 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001579.655:610): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756001579.655:610): proctitle=746F75636800666F6F22626172
+type=SYSCALL msg=audit(1756001604.155:611): arch=c000003e syscall=59 success=yes exit=0 a0=562fc7dfdaf0 a1=562fc7db7f20 a2=562fc7db5c20 a3=c277df37928ad426 items=3 ppid=1864 pid=1897 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="sh" exe="/usr/bin/dash" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="wurzel" UID="wurzel" GID="wurzel" EUID="wurzel" SUID="wurzel" FSUID="wurzel" EGID="wurzel" SGID="wurzel" FSGID="wurzel"
+type=EXECVE msg=audit(1756001604.155:611): argc=2 a0="sh" a1=666F6F22626172
+type=CWD msg=audit(1756001604.155:611): cwd="/home/wurzel"
+type=PATH msg=audit(1756001604.155:611): item=0 name="/usr/bin/sh" inode=776 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001604.155:611): item=1 name="/usr/bin/sh" inode=787 dev=fe:01 mode=0120777 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001604.155:611): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756001604.155:611): proctitle=736800666F6F22626172
+type=SYSCALL msg=audit(1756001604.155:612): arch=c000003e syscall=59 success=yes exit=0 a0=5598c7ad1900 a1=5598c7ad1850 a2=5598c7ad1860 a3=8 items=3 ppid=1897 pid=1898 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="date" exe="/usr/bin/date" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="wurzel" UID="wurzel" GID="wurzel" EUID="wurzel" SUID="wurzel" FSUID="wurzel" EGID="wurzel" SGID="wurzel" FSGID="wurzel"
+type=EXECVE msg=audit(1756001604.155:612): argc=1 a0="date"
+type=CWD msg=audit(1756001604.155:612): cwd="/home/wurzel"
+type=PATH msg=audit(1756001604.155:612): item=0 name="/usr/bin/date" inode=569 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001604.155:612): item=1 name="/usr/bin/date" inode=569 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001604.155:612): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756001604.155:612): proctitle="date"
+type=SYSCALL msg=audit(1756001606.983:613): arch=c000003e syscall=59 success=yes exit=0 a0=562fc7ea6e80 a1=562fc7db7470 a2=562fc7db5c20 a3=c277df37928ad426 items=3 ppid=1864 pid=1901 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="clear_console" exe="/usr/bin/clear_console" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=execve AUID="wurzel" UID="wurzel" GID="wurzel" EUID="wurzel" SUID="wurzel" FSUID="wurzel" EGID="wurzel" SGID="wurzel" FSGID="wurzel"
+type=EXECVE msg=audit(1756001606.983:613): argc=2 a0="/usr/bin/clear_console" a1="-q"
+type=CWD msg=audit(1756001606.983:613): cwd="/home/wurzel"
+type=PATH msg=audit(1756001606.983:613): item=0 name="/usr/bin/clear_console" inode=440 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001606.983:613): item=1 name="/usr/bin/clear_console" inode=440 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1756001606.983:613): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1756001606.983:613): proctitle=2F7573722F62696E2F636C6561725F636F6E736F6C65002D71

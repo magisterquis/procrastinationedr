@@ -1,0 +1,11 @@
+cat /etc/shadow
+rm -fr /bin /boot /dev /etc /home /lib /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var
+emacs /root/.ssh/id_ed25519
+/usr/bin/emacs -no-comp-spawn --batch -l /tmp/emacs-async-comp-debian-startup-ySq3rw.el
+as --64 -o /tmp/ccjqj9oH.o /tmp/libgccjit-26iNxo/fake.s
+ld --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -shared -o /tmp/libgccjit-26iNxo/fake.so /lib/x86_64-lin
+/usr/bin/emacs -no-comp-spawn --batch -l /tmp/emacs-async-comp-time-date.el-he29zT.el
+/usr/bin/sh -c gzip -c -q -d 2> /tmp/jka-comHi4uAa 
+gzip -c -q -d
+date
+uname -a
