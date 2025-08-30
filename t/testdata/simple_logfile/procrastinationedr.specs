@@ -6,4 +6,4 @@
 3 uname -a
 5 uname
 10 ^/usr/bin/
-
+10 unset SSH_.*

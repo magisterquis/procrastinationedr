@@ -6,7 +6,7 @@ package filter
  * Filter processes by regex
  * By J. Stuart McMurray
  * Created 20250824
- * Last Modified 20250824
+ * Last Modified 20250830
  */
 
 import (
@@ -50,8 +50,10 @@ func filterArgv(
 	argv []string,
 	specs Specs,
 ) {
-	/* Because we're EDR, we assume argv is a single string. */
+	/* Because we're EDR, we assume argv is a single string and that
+	newlines are really spaces. */
 	args := strings.Join(argv, " ")
+	args = strings.ReplaceAll(args, "\n", " ")
 
 	/* Check ALL the specs. */
 	for _, set := range specs.Sets {

@@ -5,7 +5,7 @@ package filter
  * Tests for filter.go
  * By J. Stuart McMurray
  * Created 20250824
- * Last Modified 20250824
+ * Last Modified 20250830
  */
 
 import (
@@ -29,11 +29,13 @@ func TestFilter(t *testing.T) {
 			{"foo"},
 			{"7et", "", "", "what"},
 			{"d", "e", "ffffff"},
+			{"sh", "-c", "\nfoo\nbar\ntridge\n"},
 		}
 		want = []Hit{
 			{Level: 0x1, Args: "abc 123"},
 			{Level: 0x3, Args: "foo"},
 			{Level: 0x2, Args: "d e ffffff"},
+			{Level: 0x1, Args: "sh -c  foo bar tridge "},
 		}
 		argvs = make(chan []string, len(have))
 		hits  = make(chan Hit, len(have))

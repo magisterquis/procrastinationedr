@@ -4,13 +4,13 @@
 # Make sure our code is up-to-date and doesn't have debug things.
 # By J. Stuart McMurray
 # Created 20250823
-# Last Modified 20250823
+# Last Modified 20250830
 
 set -euo pipefail
 
 . t/shmore.subr
 
-tap_plan 13
+tap_plan 15
 
 TMPD=$(mktemp -d)
 trap 'rm -rf "$TMPD"; tap_done_testing' EXIT
@@ -45,7 +45,9 @@ set -A WANTS \
         "3 uname -a" \
         '1 touch foo"bar' \
         '1 sh foo"bar' \
-        "10 /usr/bin/clear_console -q"
+        "10 /usr/bin/clear_console -q" \
+        "10 bash -c  chmod 0755 bin/vulnerableserver sudo setcap cap_net_bind_service+ep bin/vulnerableserver && unset SSH_CLIENT SSH_CONNEC"
+
 for WANT in "${WANTS[@]}"; do
         : $((I++))
         read -pr
