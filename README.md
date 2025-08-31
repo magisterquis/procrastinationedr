@@ -28,7 +28,7 @@ Quickstart
    ```
 2. Tell auditd to log process executions
    ```sh
-   auditctl -a always,exit -F arch=b64 -S execve -F success=1 -F auid!=0
+   auditctl -a always,exit -F arch=b64 -S execve -F success=1 -F auid!=0 -F auid!=-1
    ```
 3. Set some logging specifications
    ```sh
