@@ -1,10 +1,10 @@
 #!/bin/ksh
 #
 # simple_logfile.t
-# Make sure our code is up-to-date and doesn't have debug things.
+# Make sure we can read a simple auditd log
 # By J. Stuart McMurray
 # Created 20250823
-# Last Modified 20250830
+# Last Modified 20250901
 
 set -euo pipefail
 
