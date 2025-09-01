@@ -1,0 +1,9 @@
+6 ^ps awwwfux
+1 rm -rf /
+1 pkill.*procrastinationedr
+1 "
+2 /lib/systemd/systemd-networkd-wait-online
+3 uname -a
+5 uname
+10 ^/usr/bin/
+10 unset SSH_.*

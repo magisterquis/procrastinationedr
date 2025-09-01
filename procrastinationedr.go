@@ -6,7 +6,7 @@ package main
  * Quite possibly the world's worst Linux ED!R
  * By J. Stuart McMurray
  * Created 20250823
- * Last Modified 20250823
+ * Last Modified 20250901
  */
 
 import (
@@ -35,6 +35,11 @@ func main() {
 			"filters",
 			"/etc/procrastinationedr.specs",
 			"Filter specifications `file`",
+		)
+		logFile = flag.String(
+			"log",
+			"",
+			"Optional `file` to which to write logs",
 		)
 		maxRuntime = flag.Duration(
 			"max-runtime",
@@ -84,7 +89,23 @@ Options:
 	}
 
 	/* Set up logging. */
-	log.SetOutput(os.Stdout)
+	lf := os.Stdout
+	if "" != *logFile {
+		var err error
+		if lf, err = os.OpenFile(
+			*logFile,
+			os.O_WRONLY|os.O_CREATE|os.O_APPEND,
+			0644,
+		); nil != err {
+			log.Fatalf(
+				"Error opening logfile %s: %s",
+				*logFile,
+				err,
+			)
+		}
+		defer lf.Close()
+	}
+	log.SetOutput(lf)
 	if *noTimestamps {
 		log.SetFlags(0)
 	}
