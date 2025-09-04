@@ -97,7 +97,7 @@ program executions logged by `auditd(8)`.
 The priority is an integer.  Higher numbers take priority.
 
 The regular expression is, well, a regular expression.  Each program's argument
-vector will be joined with spaces and checkcked against each regular expression
+vector will be joined with spaces and checked against each regular expression
 in decreasing numerical order.  Should one match, it will be logged.  See the
 quickstart for an example.
 
