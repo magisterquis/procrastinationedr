@@ -94,7 +94,7 @@ The only real configuration is via the filter specifications file, which
 consists of prioritized regular expressions used to decide whether to print
 program executions logged by `auditd(8)`.
 
-The priority is an integer.  Higher numbers take priority.
+The priority is an integer.  Lower numbers take priority.
 
 The regular expression is, well, a regular expression.  Each program's argument
 vector will be joined with spaces and checked against each regular expression
